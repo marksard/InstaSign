@@ -1,0 +1,157 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{10, 10}, {133, 30}}",
+        "class" : "Button",
+        "attributes" : {
+          "uuid" : "F7634A5B-E0B0-47DF-BDEC-C0623CD8BCB6",
+          "name" : "btnSelectImage",
+          "font_size" : 9,
+          "corner_radius" : 1,
+          "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "frame" : "{{120, 224}, {80, 32}}",
+          "border_color" : "RGBA(0.752809,0.752809,0.752809,1.000000)",
+          "border_width" : 1,
+          "title" : "Select Image",
+          "action" : "btn_select_image_tapped",
+          "class" : "Button",
+          "image_name" : "iob:image_24",
+          "flex" : "WRB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{10, 200}, {300, 266}}",
+        "class" : "ImageView",
+        "attributes" : {
+          "flex" : "WH",
+          "border_width" : 1,
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "ImageView",
+          "corner_radius" : 1,
+          "uuid" : "8ECF98D5-7321-442C-BB2D-0F13B55C8BC3",
+          "background_color" : "RGBA(0.365793,0.365793,0.365793,1.000000)",
+          "name" : "imgResultView"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{151, 48}, {159, 30}}",
+        "class" : "SegmentedControl",
+        "attributes" : {
+          "segments" : "sign1|sign2|sign+date",
+          "frame" : "{{100, 226}, {120, 29}}",
+          "uuid" : "B94F6E9E-1A71-4ABC-A493-1A15FFA1BC26",
+          "name" : "segSelectName",
+          "class" : "SegmentedControl",
+          "flex" : "WLB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{10, 48}, {133, 144}}",
+        "class" : "ImageView",
+        "attributes" : {
+          "border_width" : 1,
+          "flex" : "WRB",
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "ImageView",
+          "corner_radius" : 0,
+          "uuid" : "98890A64-7ECC-4F22-AD12-ED149B53BA83",
+          "name" : "imgHistView"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{151, 86}, {159, 30}}",
+        "class" : "SegmentedControl",
+        "attributes" : {
+          "class" : "SegmentedControl",
+          "frame" : "{{100, 226}, {120, 29}}",
+          "uuid" : "444227E7-2FC8-4570-991D-F4B356477C8A",
+          "segments" : "Left|Center|Right",
+          "name" : "segHorizontal",
+          "flex" : "WLB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{151, 124}, {159, 30}}",
+        "class" : "SegmentedControl",
+        "attributes" : {
+          "class" : "SegmentedControl",
+          "frame" : "{{100, 226}, {120, 29}}",
+          "uuid" : "05EF731A-DCE3-4024-9D5D-D29E93E346B3",
+          "segments" : "Top|Center|Bottom",
+          "name" : "segVertical",
+          "flex" : "WLB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{151, 162}, {159, 30}}",
+        "class" : "ImageView",
+        "attributes" : {
+          "flex" : "WLB",
+          "border_width" : 1,
+          "frame" : "{{110, 190}, {100, 100}}",
+          "class" : "ImageView",
+          "corner_radius" : 0,
+          "uuid" : "9D5A6948-C699-44B3-9B1A-08F97009EA00",
+          "name" : "imgSignView"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{151, 11}, {159, 29}}",
+        "class" : "SegmentedControl",
+        "attributes" : {
+          "flex" : "WLB",
+          "segments" : "Fit|Square",
+          "frame" : "{{100, 226}, {120, 29}}",
+          "uuid" : "F0255C09-A7E1-4A48-9655-0FF65D2FD04D",
+          "custom_attributes" : "",
+          "class" : "SegmentedControl",
+          "name" : "segFormat"
+        },
+        "selected" : true
+      }
+    ],
+    "frame" : "{{0, 0}, {320, 480}}",
+    "class" : "View",
+    "attributes" : {
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "name" : "",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]
