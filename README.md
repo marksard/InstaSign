@@ -27,3 +27,7 @@ It is an application of Perform signature on photos and resize optimized for Ins
 * Install youe favorite fonts at /Fonts/ folder, and then update font_style in Watermark class.
 * Run view.py
 * as optional: You can change other property in Watermark class with try and error :)
+
+## Run images
+![Fit image](https://marksard.github.io/assets/photos/20180515-instasign1.jpg)  
+![Square image](https://marksard.github.io/assets/photos/20180515-instasign2.jpg)
