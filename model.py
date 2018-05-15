@@ -6,7 +6,7 @@
 # Require Device: iPhone series
 # Require App: pythonista 3
 
-# 1. Input you sign at text0, 1, 2 in Watermark class.
+# 1. Input you sign at text0, 1, 2 and btn_text in Watermark class.
 # 2. Install youe favorite fonts at /Fonts/ folder, and then update font_style in Watermark class.
 # 3. Run view.py
 # as optional: You can change other property in Watermark class with try and error :)
@@ -25,6 +25,7 @@ class Watermark(object):
     text0 = '@YourName'       # sign 1
     text1 = ' Your Name'      # sign 2
     text2 = ' You: %b. %d %Y' # sign with date
+    btn_text = ['you1', 'you2', 'you3']
     index = 0
     format = 0
     font_size = 32

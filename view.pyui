@@ -49,7 +49,7 @@
         "frame" : "{{151, 48}, {159, 30}}",
         "class" : "SegmentedControl",
         "attributes" : {
-          "segments" : "sign1|sign2|sign+date",
+          "segments" : "sign1|sign2|sign3",
           "frame" : "{{100, 226}, {120, 29}}",
           "uuid" : "B94F6E9E-1A71-4ABC-A493-1A15FFA1BC26",
           "name" : "segSelectName",
