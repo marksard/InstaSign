@@ -95,7 +95,7 @@ class Model(object):
         return image_object, (mount_lefttop[0] + sb_width, mount_lefttop[1] + sb_height)
 
     def __get_watermark(self, image_object, watermark, file_date):
-        if watermark.index == 1:
+        if watermark.index == 2:
             exif_table = self.__get_exif(image_object)
             exif_date_string = exif_table.get("DateTimeOriginal")
 
@@ -118,7 +118,7 @@ class Model(object):
                 exif_date_reformat = exif_date.strftime(watermark.text2)
                 return exif_date_reformat
             return file_date.strftime(watermark.text2)
-        if watermark.index == 2:
+        if watermark.index == 1:
             return watermark.text1
         else:
             return watermark.text0
