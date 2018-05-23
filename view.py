@@ -82,8 +82,8 @@ __seg_f.selected_index = watermark.format
 
 __seg_n = v['segSelectName']
 __seg_n.action = seg_select_name_change
-__seg_n.selected_index = watermark.index
 __seg_n.segments = watermark.btn_text
+__seg_n.selected_index = watermark.index
 
 __seg_h = v['segHorizontal']
 __seg_h.action = seg_horizontal_change
