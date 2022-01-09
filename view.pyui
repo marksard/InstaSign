@@ -5,7 +5,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{10, 10}, {133, 30}}",
+        "frame" : "{{10, 10}, {138.33333333333331, 30}}",
         "class" : "Button",
         "attributes" : {
           "uuid" : "F7634A5B-E0B0-47DF-BDEC-C0623CD8BCB6",
@@ -17,7 +17,7 @@
           "border_color" : "RGBA(0.752809,0.752809,0.752809,1.000000)",
           "border_width" : 1,
           "title" : "Select Image",
-          "action" : "btn_select_image_tapped",
+          "action" : "",
           "class" : "Button",
           "image_name" : "iob:image_24",
           "flex" : "WRB"
@@ -28,7 +28,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{10, 200}, {300, 266}}",
+        "frame" : "{{10, 200}, {314, 213}}",
         "class" : "ImageView",
         "attributes" : {
           "flex" : "WH",
@@ -46,14 +46,14 @@
         "nodes" : [
 
         ],
-        "frame" : "{{151, 48}, {159, 30}}",
+        "frame" : "{{157.33333333333331, 48}, {166.66666666666669, 30}}",
         "class" : "SegmentedControl",
         "attributes" : {
-          "segments" : "sign1|sign2|sign3",
+          "class" : "SegmentedControl",
           "frame" : "{{100, 226}, {120, 29}}",
           "uuid" : "B94F6E9E-1A71-4ABC-A493-1A15FFA1BC26",
+          "segments" : "sign1|sign2|sign3",
           "name" : "segSelectName",
-          "class" : "SegmentedControl",
           "flex" : "WLB"
         },
         "selected" : false
@@ -62,7 +62,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{10, 48}, {133, 144}}",
+        "frame" : "{{10, 48}, {138.33333333333331, 144}}",
         "class" : "ImageView",
         "attributes" : {
           "border_width" : 1,
@@ -79,14 +79,14 @@
         "nodes" : [
 
         ],
-        "frame" : "{{151, 86}, {159, 30}}",
+        "frame" : "{{157.33333333333331, 86}, {166.66666666666669, 30}}",
         "class" : "SegmentedControl",
         "attributes" : {
-          "class" : "SegmentedControl",
+          "name" : "segHorizontal",
           "frame" : "{{100, 226}, {120, 29}}",
           "uuid" : "444227E7-2FC8-4570-991D-F4B356477C8A",
+          "class" : "SegmentedControl",
           "segments" : "Left|Center|Right",
-          "name" : "segHorizontal",
           "flex" : "WLB"
         },
         "selected" : false
@@ -95,14 +95,14 @@
         "nodes" : [
 
         ],
-        "frame" : "{{151, 124}, {159, 30}}",
+        "frame" : "{{157.33333333333331, 124}, {166.66666666666669, 30}}",
         "class" : "SegmentedControl",
         "attributes" : {
-          "class" : "SegmentedControl",
+          "name" : "segVertical",
           "frame" : "{{100, 226}, {120, 29}}",
           "uuid" : "05EF731A-DCE3-4024-9D5D-D29E93E346B3",
+          "class" : "SegmentedControl",
           "segments" : "Top|Center|Bottom",
-          "name" : "segVertical",
           "flex" : "WLB"
         },
         "selected" : false
@@ -111,7 +111,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{151, 162}, {159, 30}}",
+        "frame" : "{{157.33333333333331, 162}, {166.66666666666669, 30}}",
         "class" : "ImageView",
         "attributes" : {
           "flex" : "WLB",
@@ -128,7 +128,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{151, 11}, {159, 29}}",
+        "frame" : "{{157.33333333333331, 11}, {166.66666666666669, 29}}",
         "class" : "SegmentedControl",
         "attributes" : {
           "flex" : "WLB",
@@ -139,17 +139,17 @@
           "class" : "SegmentedControl",
           "name" : "segFormat"
         },
-        "selected" : true
+        "selected" : false
       }
     ],
-    "frame" : "{{0, 0}, {320, 480}}",
+    "frame" : "{{0, 0}, {334, 427}}",
     "class" : "View",
     "attributes" : {
-      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "name" : "",
       "enabled" : true,
       "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
-      "name" : "",
       "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
       "flex" : ""
     },
     "selected" : false

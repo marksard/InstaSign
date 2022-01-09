@@ -42,7 +42,7 @@ class Watermark(object):
 class Model(object):
     def __get_image(self):
         try:
-            asset = photos.pick_asset()
+            asset = photos.pick_asset(title='select')
             if asset is not None:
                 return asset.get_image(), asset.creation_date
             else:
@@ -141,7 +141,7 @@ class Model(object):
         elif watermark.position_height == 1:
             y = (image_height / 2) - (
                 text_height /
-                2) + watermark.inner_offset[1] - watermark.inner_offset[2]
+                2) + watermark.inner_offset[1] - watermark.inner_offset[3]
         elif watermark.position_height == 2:
             y = image_height - text_height - watermark.inner_offset[3]
 
@@ -226,14 +226,13 @@ class Model(object):
 
         # Fit to instagram.
         mount_rightbottom = (0, 0)
+        # counvert source_origin from RGB to ARGB.
+        image_object = source_origin.convert('RGBA')
         if watermark.format == 1:
             source_background, mount_rightbottom = self.__fit_to_instagram_square_mount(
-                source_origin.convert(
-                    'RGBA'))  # counvert source_origin from RGB to ARGB.
+                image_object)
         else:
-            source_background = self.__fit_to_instagram(
-                source_origin.convert(
-                    'RGBA'))  # counvert source_origin from RGB to ARGB.
+            source_background = self.__fit_to_instagram(image_object)
 
         # Generate a watermark image.
         watermark_image = Image.new('RGBA', source_background.size,
@@ -254,7 +253,8 @@ class Model(object):
                         mount_rightbottom[1])
         else:
             position = self.__get_watermark_position(source_background.width,
-                                                     source_background.height, text_width,
+                                                     source_background.height,
+                                                     text_width,
                                                      text_height, watermark)
 
         # Get the color different from the color of the rear image
@@ -281,13 +281,16 @@ class Model(object):
         # out.show()
         # out.save("../output/out.jpg")
 
-        sign = out.crop((position[0], position[1], position[0] + text_width,
+        sign = out.crop((position[0], position[1],
+                         position[0] + text_width,
                          position[1] + text_height))
 
         return out, sign, plt
 
 
+# debug
 if __name__ == '__main__':
     watermark = Watermark()
+    watermark.format = 1
     model = Model()
     model.resize_and_watermark(watermark)
